@@ -480,6 +480,7 @@ class Pixoo:
                         self.address,
                         self.__fallback_url,
                     )
+                    last_error = None
                     continue
                 raise
 
