@@ -9,8 +9,8 @@ from tests import IP_ADDRESS
 
 @requests_mock.Mocker()
 class TestPixoo(unittest.TestCase):
-    primary_url = f"http://{IP_ADDRESS}/post"
-    fallback_url = f"http://{IP_ADDRESS}:9000/divoom_api"
+    primary_url = f"http://{IP_ADDRESS}:9000/divoom_api"
+    fallback_url = f"http://{IP_ADDRESS}/post"
 
     def test_default_values(self, m):
         fake_response = {"error_code": 0, "PicId": 0}

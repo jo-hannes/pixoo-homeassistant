@@ -82,8 +82,8 @@ class Pixoo:
 
         # Generate API URLs. Older firmware uses /post, newer Pixoo64 firmware
         # may expose the API on port 9000.
-        self.__primary_url = 'http://{0}/post'.format(address)
-        self.__fallback_url = 'http://{0}:9000/divoom_api'.format(address)
+        self.__primary_url = 'http://{0}:9000/divoom_api'.format(address)
+        self.__fallback_url = 'http://{0}/post'.format(address)
         self.__url = None
 
         # Prefill the buffer
